@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:4000
+
+@id = fb88b48a-4f82-4aad-80ee-15ec4834ff37
+
+
+# @name list_cars
+GET {{baseUrl}}/cars
+Content-Type: application/json
+
+###
+
+# @name sold_car
+PUT {{baseUrl}}/car/sale/{{id}}
+Content-Type: application/json
+
+{
+    "cpfBuyer": "12345678920",
+}
